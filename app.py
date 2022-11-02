@@ -36,7 +36,7 @@ c30, c31, c32 = st.columns([2.5, 1, 3])
 
 with c30:
     # st.image("logo.png", width=400)
-    st.title("🔑 BERT Keyword Extractor")
+    st.title("🔑 BERT Keyword Extractor (BCG RISE 2.0)")
     st.header("")
 
 
@@ -155,7 +155,7 @@ Note that the *Keyword diversity* slider only works if the *MMR* checkbox is tic
 
             doc = doc[:MAX_WORDS]
 
-        submit_button = st.form_submit_button(label="✨ Get me the data!")
+        submit_button = st.form_submit_button(label="✨ Get me the analysis!")
 
     if use_MMR:
         mmr = True
@@ -208,7 +208,7 @@ df.index += 1
 
 # Add styling
 cmGreen = sns.light_palette("green", as_cmap=True)
-cmRed = sns.light_palette("red", as_cmap=True)
+cmRed = sns.light_palette("pink", as_cmap=True)
 df = df.style.background_gradient(
     cmap=cmGreen,
     subset=[
